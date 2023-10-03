@@ -9,6 +9,17 @@ body {
 }
 
 /* utility */
+.container {
+    width: 100%;
+    max-width: 992px;
+    padding: 2rem;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+
+}
 
 /* header */
 
@@ -20,13 +31,11 @@ body {
 }
 
 .head .container {
-    width: 100%;
     padding: 1rem 2rem;
     color: white;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 992px;
+    flex-direction: row;
 }
 
 .head i {
@@ -55,7 +64,6 @@ body {
     }
 
     .head a {
-        text-decoration: none;
         color: white;
     }
 
@@ -73,3 +81,68 @@ body {
         color: black;
     }
 }
+
+/* main */
+
+/* demo */
+
+/* mobile */
+.container {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    width: 100%;
+    background-color: rgb(179, 220, 255);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.get-a-demo {
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.card h3 {
+    color: rgb(0, 131, 253);
+}
+
+.card button {
+    padding: 0.5rem 3rem;
+    width: fit-content;
+    border: none;
+    border-radius: 24px;
+    background-color: rgb(0, 131, 253);
+}
+
+.card button a {
+    color: white;
+}
+
+.card button i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card i {
+    font-size: 4rem;
+    color: rgb(0, 131, 253);
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {}
+
+/* desktop */
+@media screen and (min-width: 992px) {}
