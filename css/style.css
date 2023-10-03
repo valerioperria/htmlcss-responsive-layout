@@ -35,7 +35,7 @@ a {
     width: 100%;
 }
 
-.desktop{
+.desktop {
     display: flex;
     justify-content: center;
 }
@@ -243,19 +243,82 @@ a {
 
 /* desktop */
 @media screen and (min-width: 992px) {
-    #planning .container{
+    #planning .container {
         flex-direction: row;
         gap: 3rem;
     }
 
-    .second{
+    .second {
         height: 80%;
         width: 80%;
         align-self: flex-end;
         align-items: center;
     }
 
-    .second img{
+    .second img {
         width: 80%;
     }
 }
+
+/* testimonials */
+
+/* mobile */
+#testimonials .text {
+    text-align: center;
+}
+
+#testimonials h2 {
+    color: rgb(150, 145, 227);
+}
+
+#testimonials i {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    color: white;
+}
+
+#testimonials .card {
+    background-color: rgb(150, 145, 227);
+    align-items: center;
+}
+
+#testimonials .card p {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#testimonials h3 {
+
+    color: white;
+}
+
+#testimonials .card .img {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#testimonials img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+    #testimonials .card {
+        flex-direction: row;
+    }
+
+    #testimonials .card .text {
+        width: 70%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {}
