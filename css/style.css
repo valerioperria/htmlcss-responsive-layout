@@ -20,6 +20,26 @@ a {
     text-decoration: none;
 }
 
+.card {
+    width: 100%;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.desktop{
+    display: flex;
+    justify-content: center;
+}
+
 /* header */
 
 /* mobile */
@@ -91,16 +111,8 @@ a {
     gap: 1.5rem;
 }
 
-.card {
-    width: 100%;
+#demo .card {
     background-color: rgb(179, 220, 255);
-    padding: 2rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    height: fit-content;
-    border-radius: 12px;
-    text-align: center;
 }
 
 .get-a-demo {
@@ -130,16 +142,14 @@ a {
     color: white;
 }
 
-.card img {
-    width: 100%;
-}
+
 
 .card i {
     font-size: 4rem;
     color: rgb(0, 131, 253);
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -172,16 +182,80 @@ a {
 
 /* desktop */
 @media screen and (min-width: 992px) {
-    #demo {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .get-a-demo{
+
+    .get-a-demo {
         flex-direction: row;
     }
-    
-    .container{
+
+    .container {
         justify-content: center;
+    }
+}
+
+
+/* planning */
+
+/* mobile */
+
+#planning {
+    background-color: rgb(150, 145, 227);
+}
+
+#planning h2,
+#planning p {
+    color: white;
+    text-align: left;
+}
+
+.first {
+    padding: 2rem 0;
+}
+
+.second {
+    background-color: white;
+}
+
+.second h3,
+#planning .second p,
+#planning .second i {
+    color: black;
+    text-align: center;
+}
+
+#planning .second p {
+    font-style: oblique;
+}
+
+#planning .second i {
+    font-size: 1rem;
+    background-color: rgb(150, 145, 227);
+    border-radius: 56px;
+    width: fit-content;
+    align-self: center;
+    width: 3rem;
+    height: 3rem;
+    line-height: 300%;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    #planning .container{
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .second{
+        height: 80%;
+        width: 80%;
+        align-self: flex-end;
+        align-items: center;
+    }
+
+    .second img{
+        width: 80%;
     }
 }
