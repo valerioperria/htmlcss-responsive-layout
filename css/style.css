@@ -142,7 +142,29 @@ a {
 
 
 /* tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    #demo {
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: calc((100% / 3) - (4rem / 3));
+            height: auto;
+            align-items: stretch;
+        }
+
+        .get-a-demo {
+            width: calc((((100% / 3) - (4rem / 3)) * 2) + (4rem / 3));
+        }
+
+        .get-a-demo img {
+            width: 50%;
+            text-align: left;
+        }
+    }
+}
 
 /* desktop */
 @media screen and (min-width: 992px) {}
